@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -17,4 +17,71 @@
     --secondaryLight:#97afb9;
     --primaryGradient:#608ada;
     --secondaryGradient:#2da3e4;
+}
+body{
+     font-family: "Libre Baskerville",serif;
+  font-weight: 200;
+  font-style: normal;
+  /* width: 100vw;
+  height: 100vh; */
+}
+/* Navbar Styles */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding: 20px 0;
+    background-color: transparent;
+    transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+header.scrolled {
+    background-color: #000000; 
+    padding: 10px 0;
+    height: 4rem;
+}
+#navbar nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  
+    /* height: 2rem; */
+   
+    color: #f7f7f7;
+}
+
+#navbar nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+    column-gap: 1.2rem;
+   
+    
+}
+nav ul li a {
+    color: var(--blue);
+    text-decoration: none;
+    font-size: 18px;
+    
+}
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url('../images/myPic.JPG');
+    background-size: cover;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+     display: flex;
+
+    justify-content: flex-start;
+    padding: 4rem;
+    align-items: center;
+    color: white;
+    /* text-align: center; */
+    
 }
