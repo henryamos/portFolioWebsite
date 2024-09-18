@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+}
+:root{
+    --primary:#02b9e3;
+    --blue:#00a5e4;
+    --blue-light:#2d84b4;
+    --blue-dark:#12556d;
+    --lightPrimary:#f7f7f7;
+    --light:#e6f4f1;
+    --secondary:#1f2a42;
+    --secondaryLight:#97afb9;
+    --primaryGradient:#608ada;
+    --secondaryGradient:#2da3e4;
+}
