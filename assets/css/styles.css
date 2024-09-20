@@ -96,7 +96,7 @@ nav ul li a {
     align-items: center;
     color: white;
     width: 100%;
-    /* text-align: center; */  
+  
 }
 .hero-content{
    display: flex;
@@ -244,43 +244,6 @@ padding-top: 5rem;
     animation: animate__pulse 0.5s infinite; 
 }
 
-
-/* Projects Section */
-#projects {
-    padding: 50px;
-    background-color: #f5f5f5;
-    text-align: center;
-}
-
-#projects h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.project-grid {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.project-card {
-    background-color: white;
-    padding: 20px;
-    width: 300px;
-    margin: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: left;
-}
-
-.project-card h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.project-card p {
-    font-size: 16px;
-}
-
 /* Contact Section */
 #contact {
     padding: 50px;
@@ -368,16 +331,18 @@ padding-top: 5rem;
 }
 
 .tab {
-  padding: 10px 20px;
+  padding: 15px 30px;
   margin: 0 10px;
   border: none;
-  background-color: #eee;
+  border-radius: .2rem;
+  background-color: rgb(219, 218, 218);
   cursor: pointer;
+  font-size: 1rem;
   transition: background-color 0.3s;
 }
 
 .tab.active {
-  background-color: #4CAF50; /* Active tab color */
+  background-color: var(--secondaryGradient); /* Active tab color */
   color: white;
 }
 
@@ -389,8 +354,8 @@ padding-top: 5rem;
 }
 
 .portfolio-item {
-  width: calc(33.33% - 40px); /* Three items per row */
-  background: #f9f9f9;
+  width: calc(33.33% - 30px); /* Three items per row */
+  background: rgb(251, 251, 251);
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -401,10 +366,18 @@ padding-top: 5rem;
 .portfolio-item:hover {
   transform: scale(1.05);
 }
-
+.portfolio-item h3,.portfolio-item p{
+  color: var(--secondary);
+  text-align: center;
+  margin-top: .5rem;
+}
+.portfolio-item p{
+  font-size: 0.9rem;
+  line-height: 1.8rem;
+}
 .portfolio-item img {
   width: 100%;
-  height: auto;
+  height: 150px;
 }
 
 .stacks {
@@ -434,7 +407,7 @@ padding-top: 5rem;
   color: #FF5722; /* Change color on hover */
 }
 
-/* Make it responsive */
+
 @media (max-width: 768px) {
   .portfolio-item {
     width: calc(50% - 40px); /* Two items per row */
@@ -443,6 +416,6 @@ padding-top: 5rem;
 
 @media (max-width: 480px) {
   .portfolio-item {
-    width: 100%; /* Full width on small screens */
+    width: 100%; 
   }
 }
