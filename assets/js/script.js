@@ -50,4 +50,32 @@ document.addEventListener("DOMContentLoaded", function () {
 
   setTimeout(typeRole, delayBetweenRoles); // Start typing the first role
 });
+document.addEventListener("DOMContentLoaded", function () {
+  AOS.init({
+    duration: 1000, 
+    once: true, 
+    easing: "ease-in-out", 
+  });
+});
+
+document.querySelectorAll(".tab").forEach((tab) => {
+  tab.addEventListener("click", () => {
+    // Remove active class from all tabs
+    document
+      .querySelectorAll(".tab")
+      .forEach((t) => t.classList.remove("active"));
+    // Add active class to the clicked tab
+    tab.classList.add("active");
+
+    const filter = tab.dataset.filter;
+    document.querySelectorAll(".portfolio-item").forEach((item) => {
+      if (filter === "all" || item.classList.contains(filter)) {
+        item.style.display = "block"; // Show item
+      } else {
+        item.style.display = "none"; // Hide item
+      }
+    });
+  });
+});
+
 

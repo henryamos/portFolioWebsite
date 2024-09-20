@@ -86,7 +86,7 @@ nav ul li a {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../images/myPic.JPG');
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../images/hero.JPG');
     background-size: cover;
     /* background-position: center; */
     background-repeat: no-repeat;
@@ -296,3 +296,153 @@ padding-top: 5rem;
     font-size: 18px;
 }
 
+#services {
+  padding: 80px 0;
+  background-color: #f9f9f9;
+}
+#services h2{
+    font-size: 2rem;
+    text-align: center;
+   margin-bottom: 3rem;
+}
+
+.service-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.service-item {
+  width: 250px;
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-item i {
+  font-size: 60px;
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+/* Icon Colors */
+.service-item i.fa-mobile-alt {
+  color: var(--primaryGradient); 
+}
+
+.service-item i.fa-code {
+  color: #2196F3;
+}
+
+.service-item i.fa-palette {
+  color: #FF5722;
+}
+
+.service-item i.fa-hands-helping {
+  color: #FFC107; 
+}
+
+
+.service-item:hover i {
+  color: #000; 
+}
+
+#portfolio {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.tab-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.tab {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  background-color: #eee;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tab.active {
+  background-color: #4CAF50; /* Active tab color */
+  color: white;
+}
+
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.portfolio-item {
+  width: calc(33.33% - 40px); /* Three items per row */
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.portfolio-item:hover {
+  transform: scale(1.05);
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+}
+
+.stacks {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.stacks i {
+  font-size: 20px;
+  margin: 0 5px;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.links a {
+  color: #2196F3; /* Link color */
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.links a:hover {
+  color: #FF5722; /* Change color on hover */
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+  .portfolio-item {
+    width: calc(50% - 40px); /* Two items per row */
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-item {
+    width: 100%; /* Full width on small screens */
+  }
+}
