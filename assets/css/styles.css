@@ -323,7 +323,10 @@ padding-top: 5rem;
   padding: 80px 0;
   background-color: #ffffff;
 }
-
+#portfolio  h2{
+  text-align: center;
+  margin-bottom: 3rem;
+}
 .tab-container {
   display: flex;
   justify-content: center;
