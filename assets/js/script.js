@@ -50,3 +50,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
   setTimeout(typeRole, delayBetweenRoles); // Start typing the first role
 });
+
