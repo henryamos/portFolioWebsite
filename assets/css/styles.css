@@ -319,11 +319,11 @@ padding-top: 5rem;
   color: #000; 
 }
 
-#portfolio {
+#projects {
   padding: 80px 0;
   background-color: #ffffff;
 }
-#portfolio  h2{
+#projects  h2{
   text-align: center;
   margin-bottom: 3rem;
 }
@@ -354,6 +354,7 @@ padding-top: 5rem;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  padding: 1rem;
 }
 
 .portfolio-item {
